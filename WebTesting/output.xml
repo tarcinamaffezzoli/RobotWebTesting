@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-07-08T17:48:30.349593" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon Testes" source="C:\Users\Infra\OneDrive - Pulsati\Área de Trabalho\Cursos\Automação\RobotFramework\WebTesting\amazon_testes.robot">
+<test id="s1-t1" name="Caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="9">
+<kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-08T17:48:30.809561" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-08T17:48:30.809227" elapsed="1.806797"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-08T17:48:32.616417" elapsed="0.066179"/>
+</kw>
+<status status="PASS" start="2025-07-08T17:48:30.808061" elapsed="1.874967"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-07-08T17:48:32.685992" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-07-08T17:48:32.685428" elapsed="0.768908"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T17:48:33.454691" elapsed="5.006549"/>
+</kw>
+<status status="PASS" start="2025-07-08T17:48:32.684384" elapsed="5.777067"/>
+</kw>
+<kw name="Entrar no menu &quot;Eletrônicos&quot;" owner="amazon_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${MENU_TODOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T17:48:38.462600" elapsed="0.078326"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-08T17:48:38.541841" level="INFO">Clicking element '//span[@class='hm-icon-label']'.</msg>
+<arg>locator=${MENU_TODOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T17:48:38.541293" elapsed="0.292843"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${TITULO_MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T17:48:38.834499" elapsed="0.632073"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-08T17:48:39.467102" level="INFO">Clicking element '//a[@aria-label='Ver todos os departamentos']//div[contains(text(),'Ver tudo')]'.</msg>
+<arg>locator=${VER_TUDO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T17:48:39.466802" elapsed="0.147694"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${CONFIRMAR_VER_TUDO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T17:48:39.614700" elapsed="0.097254"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${ELETRONICOS_TV_AUDIO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-07-08T17:48:39.712230" elapsed="0.329441"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-08T17:48:40.043519" level="INFO">Clicking element '//div[normalize-space()='Eletrônicos, TV e Áudio']'.</msg>
+<arg>locator=${ELETRONICOS_TV_AUDIO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T17:48:40.042335" elapsed="0.159049"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-08T17:48:41.202499" level="INFO">Slept 1 second.</msg>
+<arg>1.0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-08T17:48:40.201609" elapsed="1.001129"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${CONFIRMAR_MENU_ELETRO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T17:48:41.203120" elapsed="0.036826"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${TUDO_EM_ELETRONICOS}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-07-08T17:48:41.240116" elapsed="0.301858"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-08T17:48:42.543363" level="INFO">Slept 1 second.</msg>
+<arg>1.0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-08T17:48:41.542464" elapsed="1.001242"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${TUDO_EM_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T17:48:42.544104" elapsed="0.036239"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>locator=${TUDO_EM_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-07-08T17:48:42.580520" elapsed="0.054652"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-08T17:48:42.636088" level="INFO">Clicking element '//a[normalize-space()='Tudo em Eletrônicos']'.</msg>
+<msg time="2025-07-08T17:48:44.044377" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-08T17:48:44.044744" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/gp/browse.html?node=16209062011&amp;amp;ref_=nav_em__electronics_all__0_2_19_2" class="hmenu-item"&gt;...&lt;/a&gt; is not clickable at point (174, 164). Other element would receive the click: &lt;a href="/gp/browse.html?node=16209062011&amp;amp;ref_=nav_em__electronics_all__0_2_19_2" class="hmenu-item"&gt;...&lt;/a&gt;
+  (Session info: chrome=138.0.7204.97); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65e8c6f95+76917]
+	GetHandleVerifier [0x0x7ff65e8c6ff0+77008]
+	(No symbol) [0x0x7ff65e679dea]
+	(No symbol) [0x0x7ff65e6d8269]
+	(No symbol) [0x0x7ff65e6d5c02]
+	(No symbol) [0x0x7ff65e6d2c41]
+	(No symbol) [0x0x7ff65e6d1b31]
+	(No symbol) [0x0x7ff65e6c3368]
+	(No symbol) [0x0x7ff65e6f846a]
+	(No symbol) [0x0x7ff65e6c2c16]
+	(No symbol) [0x0x7ff65e6f8680]
+	(No symbol) [0x0x7ff65e72065c]
+	(No symbol) [0x0x7ff65e6f8243]
+	(No symbol) [0x0x7ff65e6c1431]
+	(No symbol) [0x0x7ff65e6c21c3]
+	GetHandleVerifier [0x0x7ff65eb9d2cd+3051437]
+	GetHandleVerifier [0x0x7ff65eb97923+3028483]
+	GetHandleVerifier [0x0x7ff65ebb58bd+3151261]
+	GetHandleVerifier [0x0x7ff65e8e185e+185662]
+	GetHandleVerifier [0x0x7ff65e8e971f+218111]
+	GetHandleVerifier [0x0x7ff65e8cfb14+112628]
+	GetHandleVerifier [0x0x7ff65e8cfcc9+113065]
+	GetHandleVerifier [0x0x7ff65e8b6c98+10616]
+	BaseThreadInitThunk [0x0x7ffcc73ae8d7+23]
+	RtlUserThreadStart [0x0x7ffcc871c34c+44]
+</msg>
+<arg>locator=${TUDO_EM_ELETRONICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-07-08T17:48:42.635523" elapsed="1.416036">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/gp/browse.html?node=16209062011&amp;amp;ref_=nav_em__electronics_all__0_2_19_2" class="hmenu-item"&gt;...&lt;/a&gt; is not clickable at point (174, 164). Other element would receive the click: &lt;a href="/gp/browse.html?node=16209062011&amp;amp;ref_=nav_em__electronics_all__0_2_19_2" class="hmenu-item"&gt;...&lt;/a&gt;
+  (Session info: chrome=138.0.7204.97); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65e8c6f95+76917]
+	GetHandleVerifier [0x0x7ff65e8c6ff0+77008]
+	(No symbol) [0x0x7ff65e679dea]
+	(No symbol) [0x0x7ff65e6d8269]
+	(No symbol) [0x0x7ff65e6d5c02]
+	(No symbol) [0x0x7ff65e6d2c41]
+	(No symbol) [0x0x7ff65e6d1b31]
+	(No symbol) [0x0x7ff65e6c3368]
+	(No symbol) [0x0x7ff65e6f846a]
+	(No symbol) [0x0x7ff65e6c2c16]
+	(No symbol) [0x0x7ff65e6f8680]
+	(No symbol) [0x0x7ff65e72065c]
+	(No symbol) [0x0x7ff65e6f8243]
+	(No symbol) [0x0x7ff65e6c1431]
+	(No symbol) [0x0x7ff65e6c21c3]
+	GetHandleVerifier [0x0x7ff65eb9d2cd+3051437]
+	GetHandleVerifier [0x0x7ff65eb97923+3028483]
+	GetHandleVerifier [0x0x7ff65ebb58bd+3151261]
+	GetHandleVerifier [0x0x7ff65e8e185e+185662]
+	GetHandleVerifier [0x0x7ff65e8e971f+218111]
+	GetHandleVerifier [0x0x7ff65e8cfb14+112628]
+	GetHandleVerifier [0x0x7ff65e8cfcc9+113065]
+	GetHandleVerifier [0x0x7ff65e8b6c98+10616]
+	BaseThreadInitThunk [0x0x7ffcc73ae8d7+23]
+	RtlUserThreadStart [0x0x7ffcc871c34c+44]
+</status>
+</kw>
+<status status="FAIL" start="2025-07-08T17:48:38.462153" elapsed="5.590064">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/gp/browse.html?node=16209062011&amp;amp;ref_=nav_em__electronics_all__0_2_19_2" class="hmenu-item"&gt;...&lt;/a&gt; is not clickable at point (174, 164). Other element would receive the click: &lt;a href="/gp/browse.html?node=16209062011&amp;amp;ref_=nav_em__electronics_all__0_2_19_2" class="hmenu-item"&gt;...&lt;/a&gt;
+  (Session info: chrome=138.0.7204.97); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65e8c6f95+76917]
+	GetHandleVerifier [0x0x7ff65e8c6ff0+77008]
+	(No symbol) [0x0x7ff65e679dea]
+	(No symbol) [0x0x7ff65e6d8269]
+	(No symbol) [0x0x7ff65e6d5c02]
+	(No symbol) [0x0x7ff65e6d2c41]
+	(No symbol) [0x0x7ff65e6d1b31]
+	(No symbol) [0x0x7ff65e6c3368]
+	(No symbol) [0x0x7ff65e6f846a]
+	(No symbol) [0x0x7ff65e6c2c16]
+	(No symbol) [0x0x7ff65e6f8680]
+	(No symbol) [0x0x7ff65e72065c]
+	(No symbol) [0x0x7ff65e6f8243]
+	(No symbol) [0x0x7ff65e6c1431]
+	(No symbol) [0x0x7ff65e6c21c3]
+	GetHandleVerifier [0x0x7ff65eb9d2cd+3051437]
+	GetHandleVerifier [0x0x7ff65eb97923+3028483]
+	GetHandleVerifier [0x0x7ff65ebb58bd+3151261]
+	GetHandleVerifier [0x0x7ff65e8e185e+185662]
+	GetHandleVerifier [0x0x7ff65e8e971f+218111]
+	GetHandleVerifier [0x0x7ff65e8cfb14+112628]
+	GetHandleVerifier [0x0x7ff65e8cfcc9+113065]
+	GetHandleVerifier [0x0x7ff65e8b6c98+10616]
+	BaseThreadInitThunk [0x0x7ffcc73ae8d7+23]
+	RtlUserThreadStart [0x0x7ffcc871c34c+44]
+</status>
+</kw>
+<doc>Esse teste verifica o menu eletrônicos do site da Amazon.com.br
+e verifica a categoria computadores e informática</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="FAIL" start="2025-07-08T17:48:30.806761" elapsed="13.246146">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/gp/browse.html?node=16209062011&amp;amp;ref_=nav_em__electronics_all__0_2_19_2" class="hmenu-item"&gt;...&lt;/a&gt; is not clickable at point (174, 164). Other element would receive the click: &lt;a href="/gp/browse.html?node=16209062011&amp;amp;ref_=nav_em__electronics_all__0_2_19_2" class="hmenu-item"&gt;...&lt;/a&gt;
+  (Session info: chrome=138.0.7204.97); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65e8c6f95+76917]
+	GetHandleVerifier [0x0x7ff65e8c6ff0+77008]
+	(No symbol) [0x0x7ff65e679dea]
+	(No symbol) [0x0x7ff65e6d8269]
+	(No symbol) [0x0x7ff65e6d5c02]
+	(No symbol) [0x0x7ff65e6d2c41]
+	(No symbol) [0x0x7ff65e6d1b31]
+	(No symbol) [0x0x7ff65e6c3368]
+	(No symbol) [0x0x7ff65e6f846a]
+	(No symbol) [0x0x7ff65e6c2c16]
+	(No symbol) [0x0x7ff65e6f8680]
+	(No symbol) [0x0x7ff65e72065c]
+	(No symbol) [0x0x7ff65e6f8243]
+	(No symbol) [0x0x7ff65e6c1431]
+	(No symbol) [0x0x7ff65e6c21c3]
+	GetHandleVerifier [0x0x7ff65eb9d2cd+3051437]
+	GetHandleVerifier [0x0x7ff65eb97923+3028483]
+	GetHandleVerifier [0x0x7ff65ebb58bd+3151261]
+	GetHandleVerifier [0x0x7ff65e8e185e+185662]
+	GetHandleVerifier [0x0x7ff65e8e971f+218111]
+	GetHandleVerifier [0x0x7ff65e8cfb14+112628]
+	GetHandleVerifier [0x0x7ff65e8cfcc9+113065]
+	GetHandleVerifier [0x0x7ff65e8b6c98+10616]
+	BaseThreadInitThunk [0x0x7ffcc73ae8d7+23]
+	RtlUserThreadStart [0x0x7ffcc871c34c+44]
+</status>
+</test>
+<doc>Essa suite testa o site da Amazon.com.br</doc>
+<status status="FAIL" start="2025-07-08T17:48:30.351526" elapsed="13.704304"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="0" fail="1" skip="0">menus</stat>
+</tag>
+<suite>
+<stat name="Amazon Testes" id="s1" pass="0" fail="1" skip="0">Amazon Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
