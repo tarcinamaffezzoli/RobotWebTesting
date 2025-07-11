@@ -15,10 +15,10 @@ Caso de teste 01 - Acesso ao menu "Amazon Prime"
     E acessar o menu "Amazon Prime"
     Então apresenta a descrição da tela "Aproveite ao máximo com o Amazon Prime"
 
-# Caso de teste 02 - Pesquisa de um Produto
-#     [Documentation]  Esse teste verifica a busca de um produto
-#     [tags]           busca_produtos  lista_busca
-#     Dado que estou na home page da Amazon.com.br
-#     Quando pesquisar pelo produto "Xbox Series S"
-#     Então o título da página deve ficar "Amazon.com.br : Xbox Series S"
-#     E um produto da linha "Xbox Series S" deve ser mostrado na página
+Caso de teste 02 - Pesquisa de um Produto
+    [Documentation]  Esse teste verifica a busca de um produto
+    [tags]           busca_produtos  lista_busca
+    Dado que estou na home page da Amazon.com.br
+    Quando pesquisar pelo produto "Xbox Series S"
+    Então o título da página deve ficar "Amazon.com.br : Xbox Series S"
+    E um produto da linha "Xbox Series S" deve ser mostrado na página
