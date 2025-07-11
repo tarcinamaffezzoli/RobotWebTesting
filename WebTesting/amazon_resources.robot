@@ -12,12 +12,11 @@ ${ITEM_AMAZON_PRIME}        //a[normalize-space()='Amazon Prime']
 ${BARRA_ROLAGEM_MENU}       //div[@class='hmenu hmenu-translateX hmenu-visible']
 ${TELA_AMAZON_PRIME}        //img[@alt='Logotipo do Amazon Prime']
 ${APRV_MAXI_AMAZO_PRIME}    //h2[normalize-space()='Aproveite ao máximo com o Amazon Prime']
-# ${FRETE_GRATIS}             //a[@aria-label='Frete GRÁTIS na primeira compra']
-# ${BANER_FRETE_GRATIS}       //img[@alt='Frete GRÁTIS no seu primeiro pedido']
 ${CAMPO_PESQUISA}           twotabsearchtextbox
 ${PESQUSAR}                 nav-search-submit-button
-${PRODUTO_GIN}              //img[@alt='Anúncio patrocinado – Gin Bombay Sapphire 750ml']
 ${TITULO_PAGINA_XBOX}       (//h2[normalize-space()='Resultados'])[1]
+# ${FRETE_GRATIS}             //a[@aria-label='Frete GRÁTIS na primeira compra']
+# ${BANER_FRETE_GRATIS}       //img[@alt='Frete GRÁTIS no seu primeiro pedido']
 
 *** Keywords ***
 Abrir o navegador
