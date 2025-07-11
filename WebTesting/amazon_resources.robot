@@ -17,6 +17,7 @@ ${APRV_MAXI_AMAZO_PRIME}    //h2[normalize-space()='Aproveite ao máximo com o A
 ${CAMPO_PESQUISA}           twotabsearchtextbox
 ${PESQUSAR}                 nav-search-submit-button
 ${PRODUTO_GIN}              //img[@alt='Anúncio patrocinado – Gin Bombay Sapphire 750ml']
+${TITULO_PAGINA_XBOX}       (//h2[normalize-space()='Resultados'])[1]
 
 *** Keywords ***
 Abrir o navegador
@@ -74,9 +75,20 @@ Dado que estou na home page da Amazon.com.br
 
 Quando acessar o menu "Todos"
     Entrar no menu "Todos"
-    
+
 E acessar o menu "Amazon Prime"
     Entrar no menu "Amazon Prime"
 
 Então apresenta a descrição da tela "Aproveite ao máximo com o Amazon Prime"
     Verificar a descrição da tela "Aproveite ao máximo com o Amazon Prime"
+
+
+Quando pesquisar pelo produto "Xbox Series S"
+    Digitar o nome de produto "Xbox Series S" no campo de pesquisa
+    Clicar no botão de pesquisa
+    
+Então o título da página deve ficar "Amazon.com.br : Xbox Series S"
+    Element Should Be Visible    locator=${TITULO_PAGINA_XBOX}
+
+E um produto da linha "Xbox Series S" deve ser mostrado na página
+    Verificar o resultado da pesquisa, se listando o produto "Console Xbox Series S"
